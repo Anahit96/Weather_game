@@ -11,6 +11,57 @@
 </head>
 
 <body>
+    <section class="App">
+        <div>
+            <div class="start_game">
+                <button onclick="startGame()" class="start" id="start">Start</button>
+            </div>
+
+            <div class="block_display" id="block_display">
+                <div class="log_temp" id="log_temp">
+                    <p id="get_value"></p>
+                </div>
+                <div class="form" id="form">
+                    <input type="text" placeholder="Temperature" id="input" onkeyup="handleKeyUpInput(event)">
+                    <button onclick="checkResult()"><i class=" fa fa-check-circle-o " aria-hidden="true "></i></button>
+                    <p id="errorMessage"></p>
+                </div>
+                <ul class="informationList" id="informationList">
+                    <li>
+                        <p class="city" id="city1"></p>
+                        <p class="weather"></p>
+                        <p class="value"></p>
+                    </li>
+                    <li>
+                        <p class="city" id="city2 "></p>
+                        <p class="weather"></p>
+                        <p class="value"></p>
+                    </li>
+                    <li>
+                        <p class="city" id="city3"></p>
+                        <p class="weather"></p>
+                        <p class="value"></p>
+                    </li>
+                    <li>
+                        <p class="city" id="city4"></p>
+                        <p class="weather"></p>
+                        <p class="value"></p>
+                    </li>
+                    <li>
+                        <p class="city" id="city5"></p>
+                        <p class="weather"></p>
+                        <p class="value"></p>
+                    </li>
+                    <li class="result_box">
+                        <span id="result"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="replay_game">
+                <button onclick="window.location.reload()" class="replay" id="replaybtn">Replay</button>
+            </div>
+        </div>
+    </section>
     <script src="script.js ">
     </script>
 </body>
